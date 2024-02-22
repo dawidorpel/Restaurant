@@ -109,10 +109,19 @@ header .icons #menu-bars{
     color: #eee;
 }
 
+#search-form #search-box::-webkit-search-cancel-button{
+       -webkit-appearance: none;
+}
 
+#search-form label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
 
-
-
+#search-form label:hover{
+    color: var(--green);
+}
 
 
 
