@@ -6,7 +6,7 @@
     --black:#192a56;
     --light-color:#666;
     --box-shadow: 0.5rem 1.5rem rgb(0,0,0,0.1);
-};
+}
 * {
     font-family: 'Nunito', sans-serif ;
     margin: 0; padding: 0 ;
@@ -15,7 +15,7 @@
     outline: none; border: none ;
     text-transform: capitalize ;
     transition: all.2s linear ;
-};
+}
 
 html {
     font-size: 62.5%;
@@ -44,4 +44,89 @@ header .logo{
 
 header .logo i{
     color: var(--green);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--light-color);
+}
+header.navbar a:active,
+header .navbar a:hover{
+    color: #fff;
+    background: var(--green);
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: 0.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: #fff;
+    background-color: var(--green);
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */ 
+@media (max-width:991px){
+
+    html {
+        font-size: 55%;
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width:768px){
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: 0.1rem solid rgb(0,0,0,0.2);
+        padding: 1rem;
+    }
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        background-color: #eee;
+    }
 }
