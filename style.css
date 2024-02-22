@@ -83,6 +83,17 @@ header .icons #menu-bars{
     display: none;
 }
 
+/*#search-box{
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    z-index: 1004;
+    background: rgb(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 
@@ -121,12 +132,25 @@ header .icons #menu-bars{
         top: 100%; left: 0; right: 0;
         background: #fff;
         border-top: 0.1rem solid rgb(0,0,0,0.2);
+        border-bottom: 0.1rem solid rgb(0,0,0,0.2);
         padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
     header .navbar a{
         display: block;
         padding: 1.5rem;
         margin: 1rem;
         background-color: #eee;
+    }
+}
+
+@media (max-width:991px){
+
+    html {
+        font-size: 50%;
     }
 }
