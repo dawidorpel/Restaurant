@@ -29,6 +29,21 @@ section{
  section:nth-child(even){
     background: #eee;
  }
+
+ .sub-heading {
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+ }
+ .heading {
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+ }
+
 .btn{
     margin-top: 1.5rem;
     display: inline-block;
@@ -195,10 +210,13 @@ header .icons #menu-bars{
     line-height: 1.5;
 }
 
-.swiper-pagination-buttet-active{
-    background: ;
+.swiper-pagination-bullet-active{
+    background: var(--green);
 }
 
+.home .home-slider .slide .content h3{
+    font-size: 5rem;
+}
 
 
 
@@ -216,6 +234,10 @@ header .icons #menu-bars{
 
     header{
         padding: 1rem 2rem;
+    }
+
+    section{
+        padding:2rem;
     }
 }
 
