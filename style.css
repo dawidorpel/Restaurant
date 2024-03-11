@@ -218,9 +218,14 @@ header .icons #menu-bars{
     font-size: 5rem;
 }
 
+.dishes .box-container .box img{
+    width: 100%;
+    border-radius: 100%;
+}
+
 .dishes .box-container{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap:1.5rem;
     
 }
