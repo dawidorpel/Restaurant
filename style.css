@@ -358,6 +358,56 @@ header .icons #menu-bars{
     color: var(--black);
 }
 
+.menu .box-container img{
+    height: 35rem;
+    margin: 3rem;
+    border-radius: 48%;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
