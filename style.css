@@ -650,7 +650,7 @@ header .icons #menu-bars{
 }
 
 @media screen and (min-width: 480px) {
-    .order form .inputBox .input{
-        width: 70%;
+    .order form {
+        width: 100%;
     }
 }
